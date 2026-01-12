@@ -5,7 +5,7 @@ import SkillItem from '../../components/SkillItem'
 
 function Twitter() {
   return (
-    <section className="px-3 lg:px-12 py-2 lg:py-4">
+    <section className="px-3 lg:px-12 py-2 lg:py-6">
       <div className="flex flex-col max-w-6xl mx-auto gap-2">
         {/* Título */}
         <h2 className="font-spartan font-extrabold text-2xl lg:text-6xl text-preto dark:text-branco text-center">
@@ -24,7 +24,7 @@ function Twitter() {
         </p>
 
         {/* SkillItems - React e CSS*/}
-        <div className="flex flex-wrap justify-center gap-1 lg:gap-2 py-2 lg:py-4">
+        <div className="flex flex-wrap justify-center gap-1 lg:gap-2 pt-2 lg:pt-4">
           <SkillItem icon={SiNodedotjs} name="Node.js" />
           <SkillItem icon={SiPrisma} name="Prisma"/>
           <SkillItem icon={SiTypescript} name="TypeScript"/>

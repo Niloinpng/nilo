@@ -6,7 +6,7 @@ function NavBar() {
       <div className="flex flex-col">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
-            <h1 className="text-xl font-bold">Nilo Silveira da Silva</h1>
+            <h1 className="text-xl font-bold">Danilo Silveira da Silva</h1>
           </div>
           <DarkModeToggle />
         </div>

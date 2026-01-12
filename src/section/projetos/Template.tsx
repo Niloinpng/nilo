@@ -1,11 +1,15 @@
 import { SiReact, SiTailwindcss, SiTypescript } from 'react-icons/si'
 import SkillItem from '../../components/SkillItem'
+import tem1 from '../../assets/images/Template/1.png'
+import tem2 from '../../assets/images/Template/2.png'
+import tem3 from '../../assets/images/Template/3.png'
 import Carousel from '../../components/Carousel'
 
 function Template() {
+  const images = [tem1, tem2, tem3]
 
   return (
-    <section className="px-3 lg:px-12 pt-2 lg:pt-4">
+    <section className="px-3 lg:px-12 pt-2 lg:py-6">
       <div className="flex flex-col max-w-6xl mx-auto gap-2">
         {/* Título */}
         <h2 className="font-spartan font-extrabold text-2xl lg:text-6xl text-preto dark:text-branco text-center">
@@ -25,6 +29,14 @@ function Template() {
             <SkillItem icon={SiTailwindcss} name="Tailwind CSS" />
             <SkillItem icon={SiReact} name="React" />
             <SkillItem icon={SiTypescript} name="TypeScript"/>
+        </div>
+
+        {/* Carousel com as imagens */}
+        <div className="w-full max-w-220 mx-auto">
+          <Carousel 
+            images={images}
+            alt="Gestor do App Sebrae"
+          />
         </div>
 
       </div>

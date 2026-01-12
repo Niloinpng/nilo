@@ -1,1 +1,1 @@
-# npm dev run
+# npm run dev

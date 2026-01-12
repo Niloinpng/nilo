@@ -32,7 +32,7 @@ function Contact() {
   ]
 
   return (
-    <section className="px-3 lg:px-12 py-2 lg:py-4">
+    <section className="px-3 lg:px-12 py-2 lg:py-8">
       <div className="flex flex-col max-w-4xl mx-auto">
         <Titulo 
           titulo="CONTATO"

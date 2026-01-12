@@ -57,7 +57,7 @@ function Hero() {
                 <div className="md:flex-[0.64] md:self-stretch flex justify-center md:justify-end md:items-center">
           <img 
             src={arteImage} 
-            alt="Danilo Silva" 
+            alt="Imagem do Congresso Nacional" 
             className="rounded-lg max-w-full h-auto md:h-full md:max-h-100 md:w-auto object-contain"
           />
         </div>
@@ -71,7 +71,7 @@ function Hero() {
               <span className={showCursor ? 'opacity-100' : 'opacity-0'}>|</span>
             </h1>
             <h2 className="lg:text-2xl text-preto dark:text-branco">
-              Eu sou o <span className="font-bold">Nilo Silveira</span>, desenvolvedor full-stack.
+              Eu sou o <span className="font-bold">Danilo Silveira</span>, desenvolvedor full-stack.
             </h2>
           </div>
           
