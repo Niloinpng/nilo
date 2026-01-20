@@ -15,10 +15,14 @@ function App() {
     <>
       <div className="bg-pattern-balls w-full min-h-screen ">
         <NavBar />
-        <Hero />
-        <Skills />
+        <div id="inicio" className="pt-20 lg:pt-24">
+          <Hero />
+        </div>
+        <div id="sobre">
+          <Skills />
+        </div>
         
-        <div className="flex flex-col lg:py-4">
+        <div id="projetos" className="flex flex-col lg:py-4">
           <Titulo
             titulo="PROJETOS"
           />
@@ -28,7 +32,9 @@ function App() {
           <Template />
         </div>
 
-        <Contact />
+        <div id="contato">
+          <Contact />
+        </div>
       </div>
       <Footer />
     </>
