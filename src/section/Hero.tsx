@@ -19,7 +19,7 @@ function Hero() {
   }
 
   return (
-    <div className="flex flex-col px-4 lg:px-12 lg:pb-4">
+    <div className="flex flex-col px-4 lg:px-12">
       <div className="flex items-center justify-center w-full">
         <h1 className="font-spartan font-bold text-6xl lg:text-[19rem] text-preto dark:text-branco text-center py-4 lg:py-0">
           {translations.portfolio}
@@ -67,8 +67,6 @@ function Hero() {
             />
           </div>
         </div>
-
-
       </div>
     </div>
   )
