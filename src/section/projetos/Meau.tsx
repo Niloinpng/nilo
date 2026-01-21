@@ -11,7 +11,7 @@ function Meau() {
   const images = [meau1, meau2, meau3]
 
   return (
-    <section className="px-4 lg:px-12 py-10">
+    <section className="px-10 py-15">
       <div className="flex flex-col max-w-6xl mx-auto gap-2">
         <h2 className="font-spartan font-extrabold text-2xl lg:text-6xl text-preto dark:text-branco text-center">
           MEAU

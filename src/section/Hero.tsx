@@ -8,7 +8,7 @@ function Hero() {
 
   const translations = {
     portfolio: language === 'pt' ? 'PORTFÓLIO' : 'PORTFOLIO',
-    title: 'Nilo Silveira da Silva',
+    title: 'Danilo Silveira da Silva',
     subtitle: language === 'pt' 
       ? 'Desenvolvedor Front-End & Full-Stack' 
       : 'Front-End & Full-Stack Developer',
@@ -20,9 +20,7 @@ function Hero() {
 
   return (
     <div className="flex flex-col relative">
-      {/* Duas colunas */}
-      <div className="flex flex-col md:flex-row gap-4 pb-8 lg:pb-0 lg:gap-8 px-10 lg:pt-20">
-        {/* Coluna 1: 3 títulos PORTFOLIO (60%) */}
+      <div className="flex flex-col md:flex-row gap-4 pb-8 lg:pb-0 lg:gap-8 px-10 py-20 lg:py-40">
         <div className="md:flex-[0.6] flex flex-col items-center justify-center">
           <h1 className="font-spartan font-bold text-6xl lg:text-[11rem] text-preto dark:text-branco text-center relative z-20">
             {translations.portfolio}
@@ -35,7 +33,6 @@ function Hero() {
           </h1>
         </div>
 
-        {/* Coluna 2: Textos e botões (40%) */}
         <div className="md:flex-[0.4] flex flex-col justify-start gap-10 lg:pt-8">
           {/* Textos alinhados ao topo */}
           <div className="flex flex-col gap-3 lg:gap-8">
@@ -50,7 +47,6 @@ function Hero() {
             </h3>
           </div>
           
-          {/* Botões alinhados abaixo */}
           <div className="flex flex-col md:flex-row gap-6">
             <ActionButton
               title={translations.resumeButton}

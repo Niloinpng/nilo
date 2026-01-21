@@ -5,7 +5,6 @@ import Skills from './section/Skills'
 import ADM from './section/projetos/ADM'
 import Contact from './section/Contact'
 import Footer from './section/Footer'
-import Titulo from './components/Titulo'
 import Meau from './section/projetos/Meau'
 import Template from './section/projetos/Template'
 import Twitter from './section/projetos/Twitter'
@@ -31,7 +30,7 @@ function App() {
         ></div>
         <div className="relative z-10">
         <NavBar />
-        <div id="inicio" className="pt-20 lg:pt-24">
+        <div id="inicio">
           <Hero />
         </div>
         

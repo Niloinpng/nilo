@@ -5,7 +5,7 @@ import SkillItem from '../../components/SkillItem'
 
 function Twitter() {
   return (
-    <section className="px-3 lg:px-12 py-10">
+    <section className="px-10 py-15">
       <div className="flex flex-col max-w-6xl mx-auto gap-2">
         {/* Título */}
         <h2 className="font-spartan font-extrabold text-2xl lg:text-6xl text-preto dark:text-branco text-center">

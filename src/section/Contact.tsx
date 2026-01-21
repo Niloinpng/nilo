@@ -47,7 +47,6 @@ function Contact() {
   return (
     <section className="px-10 py-8 lg:py-24">
       <div className="flex flex-col max-w-4xl mx-auto gap-6">
-      <span className="block h-1 w-full bg-preto dark:bg-branco"></span>
         <h1 className="font-extrabold text-xl lg:text-3xl text-preto dark:text-branco text-center">
           {translations.title}
         </h1>
@@ -65,7 +64,6 @@ function Contact() {
             />
           ))}
         </div>
-        <span className="block h-1 w-full bg-preto dark:bg-branco"></span>
       </div>
     </section>
   )
