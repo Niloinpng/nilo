@@ -10,10 +10,10 @@ function Footer() {
   }
 
   return (
-    <footer className="bg-preto w-full py-2 lg:py-4 flex items-center justify-center">
+    <footer className="dark:bg-preto bg-branco w-full py-2 lg:py-4 flex items-center justify-center">
       <button
         onClick={scrollToTop}
-        className="group flex flex-row items-center text-branco hover:text-branco/80 transition-colors"
+        className="group flex flex-row items-center text-preto dark:text-branco hover:text-preto/80 dark:hover:text-branco/80 transition-colors"
       >
         {Array.from({ length: 3 }).map((_, index) => (
           <div key={index} className="relative w-8 h-8 flex items-center justify-center overflow-hidden">

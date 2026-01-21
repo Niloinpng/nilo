@@ -1,9 +1,22 @@
 import { FaLinkedin, FaGithub, FaEnvelope, FaWhatsapp } from 'react-icons/fa'
 import ContactButton from '../components/ContactButton'
 import { FaPaperclip } from "react-icons/fa6"
-import Titulo from '../components/Titulo'
+import { useLanguage } from '../contexts/LanguageContext'
 
 function Contact() {
+  const { language } = useLanguage()
+
+  const translations = {
+    title: language === 'pt' ? 'CONTATO' : 'CONTACT',
+    subtitle1: language === 'pt' 
+      ? 'Gostou do meu trabalho?' 
+      : 'Did you like my work?',
+    subtitle2: language === 'pt'
+      ? 'Entre em contato ou acompanhe as minhas redes sociais'
+      : 'Get in touch or follow my social media',
+    resume: language === 'pt' ? 'Currículo PDF' : 'Resume PDF'
+  }
+
   const contacts = [
     {
       icon: FaLinkedin,
@@ -22,7 +35,7 @@ function Contact() {
     },
     {
         icon: FaPaperclip,
-        title: 'Currículo PDF',
+        title: translations.resume,
         link: 'https://drive.google.com/file/d/18_Ga_S-LnsEJlb3FmXEHlU4yGhMFwzCX/view?usp=sharing'
       },
     {
@@ -32,15 +45,19 @@ function Contact() {
   ]
 
   return (
-    <section className="px-3 lg:px-12 py-2 lg:py-8">
-      <div className="flex flex-col max-w-4xl mx-auto">
-        <Titulo 
-          titulo="CONTATO"
-          subtitulo={<>Gostou do meu trabalho? <br /> Entre em contato ou acompanhe as minhas redes sociais</>}
-        />
-        
-        {/* Botões de contato */}
-        <div className="flex flex-col gap-4 mt-4">
+    <section className="px-2 py-8 lg:py-24 dark:bg-azul bg-azul-2">
+      <div className="flex flex-col max-w-4xl mx-auto gap-4">
+        <h1 className="font-spartan font-extrabold text-xl lg:text-3xl text-preto dark:text-branco text-center">
+          {translations.title}
+        </h1>
+        <h3 className="font-spartan text-xl lg:text-4xl text-preto/80 dark:text-branco/80  text-center">
+          {translations.subtitle1}
+        </h3>
+        <h3 className="font-spartan text-xl lg:text-4xl text-preto/80 dark:text-branco/80 text-center">
+          {translations.subtitle2}
+        </h3>
+
+        <div className="flex flex-col gap-6 mt-4">
           {contacts.map((contact, index) => (
             <ContactButton
               key={index}

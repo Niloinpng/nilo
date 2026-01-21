@@ -98,11 +98,11 @@ function Skills() {
 
   return (
     <div className="flex flex-col w-full">
-      <div className="relative w-full overflow-hidden py-6 lg:py-8">
+      <div className="relative w-full overflow-hidden py-6">
         <div 
-          className="flex items-center"
+          className="flex items-center lg:gap-8 gap-2"
           style={{
-            animation: 'scroll 230s linear infinite',
+            animation: 'scroll 280s linear infinite',
             width: 'max-content'
           }}
         >
@@ -111,9 +111,9 @@ function Skills() {
               return (
                 <div
                   key={index}
-                  className="flex items-center lg:px-6 whitespace-nowrap"
+                  className="flex items-center whitespace-nowrap"
                 >
-                  <span className="font-bbh text-2xl lg:text-3xl text-preto dark:text-branco p-6">
+                  <span className="font-bbh text-2xl lg:text-3xl text-preto dark:text-branco ">
                     {item.name}:
                   </span>
                 </div>
