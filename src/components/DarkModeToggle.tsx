@@ -2,7 +2,12 @@ import { useState, useEffect } from 'react'
 import { FaSun, FaMoon } from 'react-icons/fa'
 
 function DarkModeToggle() {
-  const [isDark, setIsDark] = useState(false)
+  const [isDark, setIsDark] = useState(true)
+
+  useEffect(() => {
+    // Aplicar dark mode na montagem inicial
+    document.documentElement.setAttribute('data-theme', 'dark')
+  }, [])
 
   useEffect(() => {
     if (isDark) {

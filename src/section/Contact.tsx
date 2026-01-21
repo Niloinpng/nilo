@@ -45,18 +45,16 @@ function Contact() {
   ]
 
   return (
-    <section className="px-4 py-8 lg:py-24 dark:bg-azul bg-azul-2">
-      <div className="flex flex-col max-w-4xl mx-auto gap-4">
-        <h1 className="font-spartan font-extrabold text-xl lg:text-3xl text-preto dark:text-branco text-center">
+    <section className="px-10 py-8 lg:py-24">
+      <div className="flex flex-col max-w-4xl mx-auto gap-6">
+      <span className="block h-1 w-full bg-preto dark:bg-branco"></span>
+        <h1 className="font-extrabold text-xl lg:text-3xl text-preto dark:text-branco text-center">
           {translations.title}
         </h1>
-        <h3 className="font-spartan text-xl lg:text-4xl text-preto/80 dark:text-branco/80  text-center">
-          {translations.subtitle1}
-        </h3>
-        <h3 className="font-spartan text-xl lg:text-4xl text-preto/80 dark:text-branco/80 text-center">
+        <h3 className="font-spartan text-lg lg:text-3xl text-preto/90 dark:text-branco/90 text-center">
+          {translations.subtitle1} <br />
           {translations.subtitle2}
         </h3>
-
         <div className="flex flex-col gap-6 mt-4">
           {contacts.map((contact, index) => (
             <ContactButton
@@ -67,6 +65,7 @@ function Contact() {
             />
           ))}
         </div>
+        <span className="block h-1 w-full bg-preto dark:bg-branco"></span>
       </div>
     </section>
   )

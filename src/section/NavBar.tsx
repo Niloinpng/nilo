@@ -57,11 +57,11 @@ function NavBar() {
   }))
 
   return (
-    <nav className={`lg:px-6 fixed top-0 left-0 right-0 z-50 transition-all duration-300 
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 
     ${isScrolled ? 
-      'border border-preto/10 dark:border-branco/10 mt-2 lg:mt-4 mx-2 lg:mx-120 rounded-full bg-branco/85 dark:bg-preto/85 backdrop-blur-xs' : 
-      'border border-transparent lg:px-12'}`}>
-      <div className="px-2 mx-auto py-2 lg:py-3">
+      'border border-preto/10 dark:border-branco/10 mt-2 lg:mt-4 mx-2 lg:mx-120 rounded-full bg-branco/85 dark:bg-preto/85 backdrop-blur-xs px-2 lg:px-4' : 
+      'border border-transparent px-2 lg:px-10'}`}>
+      <div className="mx-auto p-2 lg:py-3">
         <div className="grid grid-cols-3 items-center w-full">
 
           <div className="flex justify-start">
@@ -73,7 +73,7 @@ function NavBar() {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="relative text-xs lg:text-sm font-medium text-preto/70 dark:text-branco/70 transition-colors hover:text-azul dark:hover:text-azul-2 py-2"
+                className="relative text-xs lg:text-sm  text-preto dark:text-branco transition-colors hover:text-azul dark:hover:text-azul-2 py-2"
               >
                 {item.label}
                 {activeSection === item.id && (

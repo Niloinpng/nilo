@@ -97,8 +97,8 @@ function Skills() {
   ]
 
   return (
-    <div className="flex flex-col w-full">
-      <div className="relative w-full overflow-hidden py-6">
+    <div className="flex flex-col w-full pb-8 lg:pb-24 pt-8">
+      <div className="relative w-full overflow-hidden">
         <div 
           className="flex items-center lg:gap-8 gap-2"
           style={{

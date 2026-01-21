@@ -10,7 +10,7 @@ interface ActionButtonProps {
 function ActionButton({ icon: Icon, title, link, azul = false }: ActionButtonProps) {
   const baseClasses = `flex items-center ${Icon ? 'lg:gap-3 gap-2' : ''} px-3 lg:px-6 lg:py-3 py-2 rounded-lg transition-colors border`
   
-  const normalClasses = "bg-preto/5 dark:bg-branco/5 hover:bg-preto/10 dark:hover:bg-branco/10 border-preto/10 dark:border-branco/10 hover:border-preto/20 dark:hover:border-branco/20"
+  const normalClasses = "bg-branco/70 dark:bg-preto/70 hover:bg-preto/10 dark:hover:bg-preto/60 border-branco/60 dark:border-branco/10 hover:border-preto/20 dark:hover:border-branco/20"
   const roxoClasses = "bg-azul hover:bg-azul/80 border-azul hover:border-azul/80"
   
   const textClasses = azul

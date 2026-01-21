@@ -54,8 +54,8 @@ function About() {
       : 'Creativity, Learning, Focus and Code',
     text1Pt: 'Pode me chamar de Nilo. Sou desenvolvedor web e mobile, brasileiro',
     text1Eng: 'You can call me Nilo. I am a web and mobile developer, Brazilian',
-    text1Pt2: 'e atualmente sou graduando em Ciência da Computação na UnB. Acredito que o software só é excelente quando prioriza, acima de tudo, a experiência de quem o utiliza.',
-    text1Eng2: 'and currently a Computer Science undergraduate at UnB. I believe that software is only excellent when it prioritizes, above all, the experience of those who use it.',
+    text1Pt2: 'e atualmente sou graduando em Ciência da Computação na UnB. Acredito que o software só é excelente quando prioriza a experiência de quem o utiliza.',
+    text1Eng2: 'and currently a Computer Science undergraduate at UnB. I believe that software is only excellent when it prioritizes the experience of those who use it.',
     text2: language === 'pt'
       ? 'Minha trajetória prática começou há 3 anos na CJR (Empresa Júnior), onde desenvolvi Front-end e Back-end. De lá para cá, passei pelo Sebrae Nacional — onde explorei desde automações até dashboards — e hoje atuo na Cast como desenvolvedor Front-end. Tenho domínio sólido de tecnologias como React, React Native e Tailwind CSS, sempre buscando entregar código limpo e escalável.'
       : 'My practical journey began 3 years ago at CJR (Junior Company), where I developed Front-end and Back-end. From there, I went through Sebrae Nacional — where I explored everything from automations to dashboards — and today I work at Cast as a Front-end developer. I have solid mastery of technologies like React, React Native and Tailwind CSS, always seeking to deliver clean and scalable code.',
@@ -65,14 +65,14 @@ function About() {
     }
 
   return (
-    <section className="px-4 py-8 lg:py-24">
-      <div className="flex flex-col max-w-6xl mx-auto gap-4">
+    <section className="px-10 pt-8 lg:pt-24">
+      <div className="flex flex-col max-w-6xl mx-auto gap-6">
 
-        <h1 className="font-spartan font-extrabold text-xl lg:text-3xl text-preto dark:text-branco text-center">
+        <h1 className="font-extrabold text-xl lg:text-3xl text-preto dark:text-branco text-center">
           {translations.title}
         </h1>
 
-        <h2 className="font-spartan text-xl lg:text-3xl text-preto/90 dark:text-branco/90 text-center">
+        <h2 className="font-spartan text-lg lg:text-3xl text-preto/90 dark:text-branco/90 text-center">
           {translations.subtitle}
         </h2>
 
