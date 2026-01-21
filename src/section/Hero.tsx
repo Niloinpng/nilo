@@ -1,82 +1,60 @@
-import { useState, useEffect } from 'react'
 import { FaWhatsapp, FaLinkedin } from 'react-icons/fa'
 import arteImage from '../assets/images/imagemherosection.png'
 import ActionButton from '../components/ActionButton'
+import { useLanguage } from '../contexts/LanguageContext'
 
 function Hero() {
-  const fullText = 'Hello, World!'
-  const [displayedText, setDisplayedText] = useState('')
-  const [showCursor, setShowCursor] = useState(true)
-  const [isDeleting, setIsDeleting] = useState(false)
+  const { language } = useLanguage()
 
-  useEffect(() => {
-    let timeout: number
-
-    if (!isDeleting && displayedText.length < fullText.length) {
-      timeout = window.setTimeout(() => {
-        setDisplayedText(fullText.slice(0, displayedText.length + 1))
-      }, 100)
-    } else if (!isDeleting && displayedText.length === fullText.length) {
-      timeout = window.setTimeout(() => {
-        setIsDeleting(true)
-      }, 5000)
-    } else if (isDeleting && displayedText.length > 0) {
-      timeout = window.setTimeout(() => {
-        setDisplayedText(fullText.slice(0, displayedText.length - 1))
-      }, 50)
-    } else if (isDeleting && displayedText.length === 0) {
-      timeout = window.setTimeout(() => {
-        setIsDeleting(false)
-      }, 500)
-    }
-
-    return () => window.clearTimeout(timeout)
-  }, [displayedText, isDeleting, fullText])
-
-  // Animação do cursor piscando
-  useEffect(() => {
-    const cursorInterval = setInterval(() => {
-      setShowCursor((prev) => !prev)
-    }, 530)
-
-    return () => clearInterval(cursorInterval)
-  }, [])
+  const translations = {
+    portfolio: language === 'pt' ? 'PORTFÓLIO' : 'PORTFOLIO',
+    title: 'Nilo Silveira da Silva',
+    subtitle: language === 'pt' 
+      ? 'Desenvolvedor Front-End & Full-Stack' 
+      : 'Front-End & Full-Stack Developer',
+    description: language === 'pt'
+      ? 'Focando na excelência do software e na criação de sistemas que priorizem, acima de tudo, a melhor experiência para o usuário final'
+      : 'Focusing on software excellence and creating systems that prioritize, above all, the best experience for the end user',
+    resumeButton: language === 'pt' ? 'Currículo Completo' : 'Complete Resume'
+  }
 
   return (
     <div className="flex flex-col px-4 lg:px-12 lg:pb-4">
-      {/* Título PORTFOLIO muito grande */}
       <div className="flex items-center justify-center w-full">
         <h1 className="font-spartan font-bold text-6xl lg:text-[19rem] text-preto dark:text-branco text-center py-4 lg:py-0">
-          PORTFÓLIO
+          {translations.portfolio}
         </h1>
       </div>
 
-      {/* Duas colunas */}
-      <div className="flex flex-col md:flex-row md:items-stretch gap-4 lg:gap-8 items-start">
-                {/* Segunda coluna: Imagem - 40% no desktop, altura igual à coluna do texto */}
-                <div className="md:flex-[0.64] md:self-stretch flex justify-center md:justify-end md:items-center">
+      <div className="flex flex-col md:flex-row md:items-stretch gap-4 lg:gap-8 items-start lg:-translate-y-8">
+        <div className="md:flex-[0.6] md:self-stretch flex justify-center md:justify-end md:items-center">
           <img 
             src={arteImage} 
             alt="Imagem do Congresso Nacional" 
             className="rounded-lg max-w-full h-auto md:h-full md:max-h-100 md:w-auto object-contain"
           />
         </div>
-        {/* Primeira coluna: Botões primeiro, depois texto - 60% no desktop */}
-        <div className="flex flex-col gap-2 lg:gap-6 md:flex-[0.36]">
 
-          {/* Hello World... Nilo */}
+        <div className="flex flex-col justify-between md:flex-[0.4] md:self-stretch">
+
           <div className="flex flex-col gap-2 lg:gap-6">
             <h1 className="font-bold text-2xl lg:text-5xl text-preto dark:text-branco">
-              {displayedText}
-              <span className={showCursor ? 'opacity-100' : 'opacity-0'}>|</span>
+              {translations.title}
             </h1>
-            <h2 className="lg:text-2xl text-preto dark:text-branco">
-              Eu sou o <span className="font-bold">Danilo Silveira</span>, desenvolvedor full-stack.
+            <h2 className="lg:text-3xl text-preto/80 dark:text-branco/80 italic">
+              {translations.subtitle}
             </h2>
+            <h3 className="lg:text-xl text-preto/80 dark:text-branco/80">
+              {translations.description}
+            </h3>
           </div>
           
-          {/* Botões */}
-          <div className="flex flex-wrap gap-6">
+          <div className="flex flex-wrap gap-3 mt-4 lg:mt-0">
+            <ActionButton
+              title={translations.resumeButton}
+              link="https://drive.google.com/file/d/18_Ga_S-LnsEJlb3FmXEHlU4yGhMFwzCX/view?usp=sharing"
+              azul={true}
+            />
             <ActionButton
               icon={FaWhatsapp}
               title="WhatsApp"
@@ -86,14 +64,6 @@ function Hero() {
               icon={FaLinkedin}
               title="LinkedIn"
               link="'https://www.linkedin.com/in/danilo-silveira-da-silva-1978ba237/"
-            />
-          </div>
-
-          <div className="flex flex-wrap gap-4">
-            <ActionButton
-              title="Currículo Completo"
-              link="https://drive.google.com/file/d/18_Ga_S-LnsEJlb3FmXEHlU4yGhMFwzCX/view?usp=sharing"
-              azul={true}
             />
           </div>
         </div>
