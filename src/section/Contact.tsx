@@ -45,7 +45,7 @@ function Contact() {
   ]
 
   return (
-    <section className="px-2 py-8 lg:py-24 dark:bg-azul bg-azul-2">
+    <section className="px-4 py-8 lg:py-24 dark:bg-azul bg-azul-2">
       <div className="flex flex-col max-w-4xl mx-auto gap-4">
         <h1 className="font-spartan font-extrabold text-xl lg:text-3xl text-preto dark:text-branco text-center">
           {translations.title}

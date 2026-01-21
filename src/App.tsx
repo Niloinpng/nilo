@@ -1,5 +1,6 @@
 import NavBar from './section/NavBar'
 import Hero from './section/Hero'
+import About from './section/About'
 import Skills from './section/Skills'
 import ADM from './section/projetos/ADM'
 import Contact from './section/Contact'
@@ -18,10 +19,11 @@ function App() {
         <div id="inicio" className="pt-20 lg:pt-24">
           <Hero />
         </div>
-        <div id="sobre">
-          <Skills />
-        </div>
+        <Skills />
         
+        <div id="sobre">
+          <About />
+        </div>
         <div id="projetos" className="flex flex-col lg:py-4">
           <Titulo
             titulo="PROJETOS"

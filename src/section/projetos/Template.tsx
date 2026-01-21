@@ -9,7 +9,7 @@ function Template() {
   const images = [tem1, tem2, tem3]
 
   return (
-    <section className="px-3 lg:px-12 pt-2 lg:py-6">
+    <section className="px-3 lg:px-12 py-10">
       <div className="flex flex-col max-w-6xl mx-auto gap-2">
         {/* Título */}
         <h2 className="font-spartan font-extrabold text-2xl lg:text-6xl text-preto dark:text-branco text-center">
