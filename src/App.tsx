@@ -2,6 +2,8 @@ import NavBar from './section/NavBar'
 import Hero from './section/Hero'
 import About from './section/About'
 import Skills from './section/Skills'
+import RPSE from './section/projetos/RPSE'
+import Sebrae from './section/projetos/Sebrae'
 import ADM from './section/projetos/ADM'
 import Contact from './section/Contact'
 import Footer from './section/Footer'
@@ -44,6 +46,8 @@ function App() {
           <h1 className="font-extrabold text-xl lg:text-3xl text-preto dark:text-branco text-center">
             PROJETOS
           </h1>
+          <RPSE />
+          <Sebrae />
           <ADM />
           <Meau />
           <Twitter />

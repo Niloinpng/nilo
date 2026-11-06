@@ -10,8 +10,8 @@ function Hero() {
     portfolio: language === 'pt' ? 'PORTFÓLIO' : 'PORTFOLIO',
     title: 'Danilo Silveira da Silva',
     subtitle: language === 'pt' 
-      ? 'Desenvolvedor Front-End & Full-Stack' 
-      : 'Front-End & Full-Stack Developer',
+      ? 'Desenvolvedor' 
+      : 'Developer',
     description: language === 'pt'
       ? 'Focando na excelência do software e na criação de sistemas que priorizem a melhor experiência para o usuário final.'
       : 'Focusing on software excellence and creating systems that prioritize the best experience for the end user.',
@@ -56,7 +56,7 @@ function Hero() {
             <ActionButton
               icon={FaWhatsapp}
               title="WhatsApp"
-              link="https://wa.me/5561986593970"
+              link="https://wa.me/5561993260550"
             />
             <ActionButton
               icon={FaLinkedin}

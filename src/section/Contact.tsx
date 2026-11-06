@@ -31,7 +31,7 @@ function Contact() {
     {
       icon: FaWhatsapp,
       title: 'WhatsApp',
-      link: 'https://wa.me/5561986593970'
+      link: 'https://wa.me/5561993260550'
     },
     {
         icon: FaPaperclip,

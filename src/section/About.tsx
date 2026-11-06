@@ -57,10 +57,10 @@ function About() {
     text1Pt2: 'e atualmente sou graduando em Ciência da Computação na UnB. Acredito que o software só é excelente quando prioriza a experiência de quem o utiliza.',
     text1Eng2: 'and currently a Computer Science undergraduate at UnB. I believe that software is only excellent when it prioritizes the experience of those who use it.',
     text2: language === 'pt'
-      ? 'Minha trajetória prática começou há 3 anos na CJR (Empresa Júnior), onde desenvolvi Front-end e Back-end. De lá para cá, passei pelo Sebrae Nacional — onde explorei desde automações até dashboards — e hoje atuo na Cast como desenvolvedor Front-end. Tenho domínio sólido de tecnologias como React, React Native e Tailwind CSS, sempre buscando entregar código limpo e escalável.'
+      ? 'Minha trajetória prática começou há 3 anos na CJR (Empresa Júnior), onde iniciei meus estudos em desenvolvimento web. De lá para cá, passei pelo Sebrae Nacional — onde explorei desde automações de processos até a criação de dashboards — e hoje atuo na Tegra como desenvolvedor Front-end. Tenho domínio de tecnologias como React, React Native e Tailwind CSS, sempre buscando entregar código limpo e escalável.'
       : 'My practical journey began 3 years ago at CJR (Junior Company), where I developed Front-end and Back-end. From there, I went through Sebrae Nacional — where I explored everything from automations to dashboards — and today I work at Cast as a Front-end developer. I have solid mastery of technologies like React, React Native and Tailwind CSS, always seeking to deliver clean and scalable code.',
     text3: language === 'pt'
-      ? 'Além do código, acredito que a tecnologia deve ser um espaço de inclusão. Atualmente, busco novos desafios que me permitam aprimorar minhas habilidades, contribuindo para o crescimento do time e entregando produtos digitais de impacto.'
+      ? 'Além do código, acredito que a tecnologia deve ser um espaço de inclusão. Atualmente, busco novos desafios que me permitam aprimorar minhas habilidades, contribuindo para o crescimento do time e entregando produtos digitais de impacto que falicitem processos e melorem a experiência do usuário.'
       : 'Beyond code, I believe that technology should be a space for inclusion. Currently, I seek new challenges that allow me to improve my skills, contributing to team growth and delivering impactful digital products.'
     }
 
